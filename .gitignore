@@ -27,3 +27,6 @@ mirage-*.tar
 *.dll
 
 /native/mirage/target
+
+# Elixir language server
+.elixir_ls

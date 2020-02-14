@@ -34,7 +34,7 @@ end
 ```ex
 {:ok, bytes} = File.read("/path/to/image.png")
 {:ok, mirage} = Mirage.from_bytes(bytes)
-{:ok, mirage} = Mirage.resize(mirage.resource, 400, 300)
+{:ok, bytes, mirage} = Mirage.resize(mirage.resource, 400, 300)
 
 mirage.width #=> 400
 mirage.height #=> 300
@@ -46,5 +46,5 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/mirage](https://hexdocs.pm/mirage).
 
-[Rust]: https://www.rust-lang.org/
-[NIF]: http://erlang.org/doc/man/erl_nif.html
+[rust]: https://www.rust-lang.org/
+[nif]: http://erlang.org/doc/man/erl_nif.html
